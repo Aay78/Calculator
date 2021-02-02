@@ -1,0 +1,21 @@
+input {
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    color: blue;
+    background-color: grey;
+    
+  }
+  
+  button {
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 30px solid rgb(221, 142, 24);
+  }
+  .name{
+      color: salmon;
+  }
+  

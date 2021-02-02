@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <style>
+      body{
+         background-color: #430000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='60%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23430000'/%3E%3Cstop offset='1' stop-color='%23080000'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23151500' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23151500' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23F40' stroke-width='2' stroke-miterlimit='10' stroke-opacity='.5'%3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill-opacity='.5' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+      }
+   </style>
+   
+       <link rel="stylesheet" href="index.css">
+       <script src="index.js"></script>
+   </head>
+   <html>
+    <head>
+    <body>
+       <form name="calculator">
+          <table>
+             <tr>
+                <td colspan="6">
+                   <input type="text" name="display" id="display" disabled>
+                </td>
+             </tr>
+             <tr>
+                <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+                <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+                <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+                <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+                
+             </tr>
+             <tr>
+                <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+                <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+                <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+                <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+             </tr>
+             <tr>
+                <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+                <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+                <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+                <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+             </tr>
+             <tr>
+                <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+                <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+                <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+                <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+             </tr>
+          </table>
+       </form>
+    </body>
+    </head>
+ </html>
